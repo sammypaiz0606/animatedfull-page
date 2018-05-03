@@ -1,0 +1,57 @@
+.wrapper {
+    margin:0 auto;
+    padding:0;
+}
+#topBar {
+    background-color:chocolate;
+}
+#menu {
+    position: fixed;
+    top:0;
+    left:0;
+    margin:25px;
+    transition:0.3s ease;
+    padding:5px;
+    background-color:#ddd;
+    border:1px solid #000;
+    border-radius:5px;
+    cursor:pointer;
+}
+#top-rightSide {
+    margin-left:200px;
+}
+#slideMenu {
+    width:100%;
+    height:100%;
+    background-color:burlywood;
+    display:none;
+    position: relative;
+    z-index: 1;
+    
+}
+.middle {
+    text-align: center;
+}
+.leftSection {
+    width:45%;
+    margin:150px 25px;
+    float:left;
+}
+.rightSection {
+    margin:0px;
+    width:45%;
+    float:left;
+}
+ul {
+    position: relative;
+    top:200px;
+    margin:25px;
+    display:block;
+}
+li {
+    background:blue;
+    padding:25px;
+}
+li:first-child {
+    bckground:#000;
+}
