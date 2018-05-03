@@ -25,33 +25,40 @@
     height:100%;
     background-color:burlywood;
     display:none;
-    position: relative;
+    position: fixed;
     z-index: 1;
     
 }
+/* Hide the menu animate bar*/
+.hidden {
+    display:none;
+}
+
 .middle {
     text-align: center;
 }
 .leftSection {
     width:45%;
-    margin:150px 25px;
+    margin:150px 50px;
     float:left;
 }
 .rightSection {
     margin:0px;
     width:45%;
     float:left;
+    
 }
-ul {
+.rightSection ul {
     position: relative;
-    top:200px;
+    top:100px;
     margin:25px;
     display:block;
+    max-width:400px;
 }
-li {
-    background:blue;
-    padding:25px;
+.rightSection ul li {
+    background:#ddd;
+    padding:25px  5px;
 }
-li:first-child {
-    bckground:#000;
+ .rightSection ul li:first-child {
+    background:chocolate;
 }
