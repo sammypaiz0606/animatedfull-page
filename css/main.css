@@ -5,55 +5,54 @@
 #topBar {
     background-color:chocolate;
 }
-#menu {
-    position: fixed;
-    z-index: 3;
-    top:0;
-    left:0;
-    margin:25px;
-    transition:0.3s ease;
-    padding:5px;
-    background-color:#ddd;
-    border:1px solid #000;
-    border-radius:5px;
-    cursor:pointer;
+#menu-button {
+   position: fixed;
+	padding: 5px 10px;
+	background-color: #FFF;
+	border-radius: 5px;
+	top: 15px;
+	left: 15px;
+	z-index: 999;
+	transition: 0.3s ease;
 }
-#top-rightSide {
+#menu-button.menu-collapse {
+    background-color:black;
+    border:3px solid #fff;
+    color:#fff;
+}
+.hidden {
+    background-color:orangered;
+    width:0;
+}
+#menu {
+ 	position: fixed;
+	z-index: 998;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transform-origin: left;
+	transition: 0.5s ease;
+}
+#menu ul {
+    list-style-type: none;
+    padding:0;
+    margin-top:200px;
     margin-left:200px;
 }
-#slideMenu {
-    width:100%;
-    height:100%;
-    background-color:burlywood;
-    display:none;
-    position: fixed;
-    z-index: 1;
+#menu ul li {
+    font-size:34px;
     
 }
-#slideMenu ul {
-    margin-top:200px;
-    text-decoration: none;
-}
-#menu.menu-open {
-    background:#000;
-    border:5px solid #fff;
-    color:#ddd;
-}
-
-/* Hide the menu animate bar*/
-.hidden {
+.menu-collapse {
     display:none;
-    text-align: center;
-    margin:55px 0 0;
-}
-.hidden:hover {
-    cursor:pointer;
-    color:#fff;
+    width:0;
 }
 
 .middle {
     text-align: center;
 }
+
 .leftSection {
     width:45%;
     margin:150px 50px;
@@ -64,6 +63,9 @@
     width:45%;
     float:left;
     
+}
+#top-rightSide {
+    margin-left:200px;
 }
 .rightSection ul {
     position: relative;
